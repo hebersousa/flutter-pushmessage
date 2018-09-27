@@ -1,6 +1,6 @@
 # pushnotificationexample
 
-A new Flutter application.
+Aplicatio Flutter para troca de mensagens em uma sala de chat utilizando Firebase Messaging
 
 ## Getting Started
 
