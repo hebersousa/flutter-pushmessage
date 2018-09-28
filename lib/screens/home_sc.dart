@@ -27,14 +27,18 @@ class _StateHomeScreen extends State<HomeScreen> {
     var titleStyle = TextStyle(
         fontSize: 42.0,
         color: Colors.white,
-        fontWeight: FontWeight.bold,
-        fontStyle: FontStyle.italic);
+        fontFamily: 'Acme');
 
     var titleApp = new Padding(
-         padding: const EdgeInsets.symmetric(vertical: 100.0),
-        child: Text('Flutter Chat',softWrap: false, style: titleStyle),
+         padding: const EdgeInsets.only(top:100.0, ),
+        child: Text('Flutter Chat',softWrap: true, style: titleStyle),
     );
 
+
+    var imagem = new Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: new Image.asset("images/chat.png",height: 100.0,),
+    );
 
     var button = new Padding(
       padding: const EdgeInsets.all(25.0),
@@ -54,14 +58,13 @@ class _StateHomeScreen extends State<HomeScreen> {
     );
 
      var field = TextField(
-
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20.0, color: Colors.black),
         decoration: InputDecoration(
             border: InputBorder.none,
             hintText: 'Entre com um apelido ...'
         ),
-       onChanged: (text){
+           onChanged: (text){
          setState(() {
            _apelido = text;
          });
@@ -74,6 +77,7 @@ class _StateHomeScreen extends State<HomeScreen> {
       child: new Container(
         decoration: BoxDecoration(
           color: Colors.white,
+
           borderRadius:  BorderRadius.circular(8.0)),
           child: field
       ));
@@ -86,6 +90,7 @@ class _StateHomeScreen extends State<HomeScreen> {
             child: Column(
                   children:[
                     titleApp,
+                    imagem,
                     containerField,
                     button
                   ]

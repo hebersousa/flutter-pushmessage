@@ -9,10 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+
     return new MaterialApp(
       title: 'Flutter Chat',
       theme: new ThemeData(
         primarySwatch: Colors.indigo,
+
+
 
       ),
       home: HomeScreen(),

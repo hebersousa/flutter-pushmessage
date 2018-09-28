@@ -55,7 +55,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
 
   Future<dynamic> post(String data) async{
-    final url = 'http://192.168.0.29:8081/send';
+    final url = 'http://172.18.8.46:8081/send';
     return http.post(
         url,
         headers: {'Content-Type':'application/json'},
