@@ -15,7 +15,13 @@ class ChatScreen extends StatefulWidget {
 
 class _ChatScreenState extends State<ChatScreen> {
   final  FirebaseMessaging firebaseMessaging = new FirebaseMessaging();
-  List<Color> cores = [Colors.blue, Colors.green, Colors.red, Colors.brown, Colors.teal, Colors.pink, Colors.orange];
+  List<Color> cores = [Colors.blue,
+  Colors.green,
+  Colors.red,
+  Colors.brown,
+  Colors.teal,
+  Colors.pink,
+  Colors.orange];
    Map<String,Color> _corUsuario = {};
   List<Mensagem> _mensagens =[];
 
@@ -31,7 +37,7 @@ class _ChatScreenState extends State<ChatScreen> {
         onMessage: (Map<String,dynamic> message) async{
 
             setState(() {
-              Mensagem msg = Mensagem.fromJSON(message);
+              Mensagem msg = Mensagem.fromJSON(message['data']);
 
               if( !_corUsuario.containsKey(msg.apelido)) {
                   Random rand = new Random();
