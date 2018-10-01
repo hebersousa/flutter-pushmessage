@@ -1,5 +1,5 @@
 # pushnotificationexample
 
-Aplicativo Flutter para troca de mensagens em uma sala de chat utilizando Firebase Messaging
+Flutter application for exchanging messages in a chat room using Firebase Messaging
 
-WEB service para comunicação com o Firebase implementado em Java com Spring Boot: https://gitlab.com/marcosnasp/push-messages
+WEB service for communication with Firebase implemented in Java with Spring Boot: https://gitlab.com/marcosnasp/push-messages
